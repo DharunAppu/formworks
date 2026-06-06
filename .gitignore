@@ -1,0 +1,7 @@
+# Dev / build artifacts — not part of the published site
+assets_raw/
+*.ipynb
+.ipynb_checkpoints/
+preview-*.png
+__pycache__/
+.DS_Store

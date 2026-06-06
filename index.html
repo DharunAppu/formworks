@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORMWORKS - Architecture · Interiors · Planning</title>
+  <meta name="description" content="FORMWORKS is an architecture, interiors and planning studio based in Coimbatore and Bangalore, designing calm, grounded, material-honest spaces." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="FORMWORKS - Architecture · Interiors · Planning" />
+  <meta property="og:description" content="A studio designing calm, grounded, material-honest spaces across Coimbatore and Bangalore." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/pollachi-house-01.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <img src="assets/img/logo.png" alt="FORMWORKS" class="nav__logo" />
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <img class="hero__bg" src="assets/img/pollachi-house-01.jpg" alt="" />
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Architecture · Interiors · Planning</p>
+      <h1 class="hero__title">Calm, grounded spaces<br />built on material honesty.</h1>
+      <p class="hero__loc">Coimbatore &nbsp;·&nbsp; Bangalore</p>
+      <a href="#work" class="hero__cta">View our work</a>
+    </div>
+  </section>
+
+  <!-- ===== Studio / Intro ===== -->
+  <section class="studio" id="studio">
+    <div class="studio__inner">
+      <p class="section-label">The Studio</p>
+      <h2 class="studio__lead">
+        FORMWORKS is an architecture and interiors studio shaping environments
+        that respond to climate, context and the way people actually live.
+      </h2>
+      <p class="studio__body">
+        We work across residences, workspaces and industrial spaces - pairing a restrained,
+        contemporary material palette with a careful attention to light, ventilation and proportion.
+        From textured concrete and timber louvers to integrated greenery, every element is chosen
+        to add depth while serving a purpose. The result is a quiet kind of luxury: warm,
+        functional, and tailored to everyday living.
+      </p>
+      <ul class="studio__stats">
+        <li><span>Architecture</span></li>
+        <li><span>Interiors</span></li>
+        <li><span>Planning</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Work / Projects ===== -->
+  <section class="work" id="work">
+    <div class="work__head">
+      <p class="section-label">Selected Work</p>
+      <h2>Projects</h2>
+    </div>
+    <div class="grid" id="projectGrid"><!-- cards injected by JS --></div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="section-label section-label--light">Get in touch</p>
+      <h2 class="contact__title">Let's design something<br />grounded together.</h2>
+      <div class="contact__grid">
+        <div class="contact__block">
+          <h3>General Inquiries</h3>
+          <p><a href="mailto:jayaraam@formworks.in">jayaraam@formworks.in</a></p>
+          <p><a href="tel:+919042055381">+91 90420 55381</a></p>
+        </div>
+        <div class="contact__block">
+          <h3>Studio</h3>
+          <p>6th Floor, Kamalakrishna Towers,<br />
+             Kamarajar Road, Uppilipalayam,<br />
+             Coimbatore - 641 004</p>
+        </div>
+        <div class="contact__block">
+          <h3>Socials</h3>
+          <p><a href="https://instagram.com/formwork.s" target="_blank" rel="noopener">Instagram @formwork.s</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> FORMWORKS</span>
+    <span>Architecture · Interiors · Planning</span>
+  </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
