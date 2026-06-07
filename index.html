@@ -26,7 +26,8 @@
   <!-- ===== Navigation ===== -->
   <header class="nav" id="nav">
     <a href="#top" class="nav__brand">
-      <img src="assets/img/logo.png" alt="FORMWORKS" class="nav__logo" />
+      <img src="assets/img/logo-light.png" alt="FORMWORKS" class="nav__logo nav__logo--light" />
+      <img src="assets/img/logo.png" alt="FORMWORKS" class="nav__logo nav__logo--dark" />
     </a>
     <nav class="nav__links" id="navLinks">
       <a href="#work">Work</a>
@@ -84,25 +85,57 @@
 
   <!-- ===== Contact ===== -->
   <section class="contact" id="contact">
-    <div class="contact__inner">
+    <div class="contact__inner contact__split">
+      <div class="contact__left">
       <p class="section-label section-label--light">Get in touch</p>
       <h2 class="contact__title">Let's design something<br />grounded together.</h2>
-      <div class="contact__grid">
+      <div class="contact__details">
         <div class="contact__block">
           <h3>General Inquiries</h3>
-          <p><a href="mailto:jayaraam@formworks.in">jayaraam@formworks.in</a></p>
-          <p><a href="tel:+919042055381">+91 90420 55381</a></p>
+          <p><a href="mailto:jayaraam@formworks.in" class="social">
+            <svg class="social__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-label="Email" role="img">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="M22 6 12 13 2 6"></path>
+            </svg>
+            <span>jayaraam@formworks.in</span>
+          </a></p>
+          <p><a href="tel:+919042055381" class="social">
+            <svg class="social__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-label="Phone" role="img">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 90420 55381</span>
+          </a></p>
         </div>
         <div class="contact__block">
           <h3>Studio</h3>
-          <p>6th Floor, Kamalakrishna Towers,<br />
-             Kamarajar Road, Uppilipalayam,<br />
-             Coimbatore - 641 004</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Kamalakrishna+Towers%2C+Kamarajar+Road%2C+Uppilipalayam%2C+Coimbatore+641004" target="_blank" rel="noopener" class="social social--top">
+            <svg class="social__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-label="Location" role="img">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>6th Floor, Kamalakrishna Towers,<br />
+              Kamarajar Road, Uppilipalayam,<br />
+              Coimbatore - 641 004</span>
+          </a></p>
         </div>
         <div class="contact__block">
           <h3>Socials</h3>
-          <p><a href="https://instagram.com/formwork.s" target="_blank" rel="noopener">Instagram @formwork.s</a></p>
+          <p><a href="https://instagram.com/formwork.s" target="_blank" rel="noopener" class="social">
+            <svg class="social__icon" viewBox="0 0 24 24" aria-label="Instagram" role="img" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>@formwork.s</span>
+          </a></p>
         </div>
+        </div>
+      </div>
+      <div class="contact__map">
+        <iframe
+          title="FORMWORKS studio location"
+          src="https://www.google.com/maps?q=Kamalakrishna+Towers%2C+Kamarajar+Road%2C+Uppilipalayam%2C+Coimbatore+641004&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </div>
   </section>

@@ -5,3 +5,4 @@ assets_raw/
 preview-*.png
 __pycache__/
 .DS_Store
+logo_debug/
